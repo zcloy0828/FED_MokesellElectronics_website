@@ -78,56 +78,127 @@ header nav a:hover {
     background-color: #999;
 }
 
-.hero {
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 700px;
+    height: 300px;
+    border-radius: 20px;
+    background: #cacaca;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    margin: 40px auto;
+}
+
+.logo-section {
+    flex: 1;
     display: flex;
     justify-content: center;
     align-items: center;
+    background-image: "mokesell-logo.png";
     padding: 20px;
-    background-color: white;
 }
 
-.sale-banner {
+.logo-section img {
+    width: 80%;
+    height: 220px;
+    width: 220px;
+}
+
+.sale-section {
+    flex: 1;
     display: flex;
+    flex-direction: column;
+    justify-content: center;
     align-items: center;
-    gap: 20px;
-}
-
-.logo-img {
-    max-width: 150px;
-    height: auto;
-}
-
-.sale-info {
-    text-align: center;
-}
-
-.sale-info h1 {
-    color: #e63946;
-    font-size: 2.5em;
-    margin: 0;
-}
-
-.sale-info .shop-now {
-    background-color: #e63946;
-    color: white;
-    border: none;
-    padding: 10px 20px;
-    border-radius: 20px;
-    font-size: 1em;
-    cursor: pointer;
-    margin-top: 10px;
-}
-
-.sale-info .shop-now:hover {
-    background-color: #d62828;
-}
-
-footer {
-    background-color: #333;
-    color: white;
+    background-color: #e94e30;
+    color: #ffffff;
     text-align: center;
     padding: 10px;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
+    border-radius: 25px;
+    width: 70px;
+
 }
+
+.sale-section h2 {
+    font-size: 50px;
+    margin: 0;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.sale-section p {
+    font-size: 24px;
+    margin: 10px 0;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.sale-section button {
+    padding: 12px 25px;
+    font-size: 18px;
+    color: #e94e30;
+    background-color: #ffffff;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+}
+
+.sale-section button:hover {
+    background-color: #f5f5f5;
+    transform: scale(1.05);
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    max-width: 1000px;
+    width: 100%;
+    margin: 20px auto;
+    justify-content: center;
+}
+
+.grid-item {
+    background: white;
+    border-radius: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    text-align: center;
+    padding: 10px;
+}
+
+.grid-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 15px;
+    object-fit: cover;
+}
+
+.grid-item button {
+    margin-top: 10px;
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #6faec5;
+    color: white;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.grid-item button:hover {
+    background-color: #4aa37b;
+    transform: scale(1.05);
+}
+footer {
+    text-align: center;
+    background-color: #4d4d4d;
+    color: #fff;
+    padding: 3px 0;
+    font-size: 14px;
+  }
