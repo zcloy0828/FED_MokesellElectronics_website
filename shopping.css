@@ -1,0 +1,137 @@
+/* Header and General Styles: Use Same as Homepage */
+header {
+    background-color: #d6e0f0;
+    color: #333;
+    padding: 20px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .logo {
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+header nav a {
+    margin: 0 10px;
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+header nav a:hover {
+    text-decoration: underline;
+}
+
+.user-options {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.icon-button {
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.notification-container {
+    position: relative;
+}
+
+.notification-box {
+    display: none;
+    position: absolute;
+    top: 40px;
+    right: 0;
+    width: 300px;
+    background-color: white;
+    border: 1px solid #ccc;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    padding: 10px;
+    border-radius: 5px;
+    z-index: 1000;
+}
+
+.notification-box h3 {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+
+.notification-box ul {
+    padding: 0;
+    list-style: none;
+}
+
+.notification-box li {
+    margin-bottom: 5px;
+    font-size: 0.9em;
+}
+
+/* Search Bar and Filters */
+.search-bar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0;
+}
+
+.search-bar input {
+    width: 70%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+}
+
+.search-bar .search-btn {
+    padding: 10px 20px;
+    margin-left: 10px;
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.search-bar .search-btn:hover {
+    background-color: #555;
+}
+
+.filter-bar {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin: 10px 0;
+}
+
+.filter-bar button {
+    padding: 10px 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+    cursor: pointer;
+}
+
+.filter-bar button:hover {
+    background-color: #eee;
+}
+
+/* Product Listings */
+.item-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20px;
+    padding: 20px;
+    max-height: 80vh;
+    overflow-y: auto;
+}
+
+.item {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 10px;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
