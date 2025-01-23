@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MokeSell - Shopping</title>
+    <link rel="stylesheet" href="laptop.css">
+</head>
+<header>
+  <div class="logo">MOKESELL</div>
+  <nav>
+      <a href="mobile.html">Mobile</a>
+      <a href="#">Laptop</a>
+      <a href="#">Accessories</a>
+  </nav>
+  <div class="user-options">
+      <button class="icon-button" aria-label="Account">
+          <img src="account_circle.png" alt="Account Icon">
+      </button>
+      <span>Welcome, User</span>
+      
+      <button class="icon-button" aria-label="Likes">
+          <img src="Heart.png" alt="Like Icon">
+      </button>
+      <button class="icon-button" aria-label="Cart">
+          <img src="Shopping Cart.png" alt="Cart Icon">
+      </button>
+      <div class="notification-container">
+          <button class="icon-button" aria-label="Notifications" id="notification-icon">
+              <img src="notifications.png" alt="Notification Icon">
+          </button>
+          <div class="notification-box" id="notification-box">
+              <h3>Notifications</h3>
+              <ul>
+                  <li>Order #123 has been shipped</li>
+                  <li>New item added to your wishlist</li>
+                  <li>Price drop on an item you liked</li>
+              </ul>
+          </div>
+      </div>
+      <button class="icon-button" aria-label="Chat">
+          <img src="Message circle.png" alt="Chat Icon">
+      </button>
+  </div>
+</header>
+
+
+<!-- Search Bar -->
+<div class="search-bar">
+  <input type="text" placeholder="Search for items...">
+  <button class="search-btn">Search</button>
+</div>
+
+<body>
+  <div class="filters">
+      <button>Filters</button>
+      <button>Condition</button>
+      <button>Storage</button>
+      <button>Series</button>
+      <button>Color</button>
+  </div>
+  <div class="filters">
+    <button onclick="filterProducts('all')">All</button>
+    <button onclick="filterProducts('brand-new')">Brand New</button>
+    <button onclick="filterProducts('lightly-used')">Lightly Used</button>
+    <button onclick="filterProducts('well-used')">Well Used</button>
+</div>
+
+<div class="grid-container" id="productGrid">
+    <div class="product-card" data-condition="brand-new">
+        <img src="laptop1.jpg" alt="ThinkPad P16 Gen 2">
+        <div class="product-details">
+            <h3>ThinkPad P16 Gen 2 Lenovo Mobile Workstation</h3>
+            <p class="product-price">From S$2,400</p>
+            <p class="stock-info">Brand New</p>
+            <p class="condition-info">Brand New</p>
+        </div>
+    </div>
+
+    <div class="product-card" data-condition="lightly-used">
+        <img src="laptop2.jpg" alt="Lenovo X1 Yoga 3rd Gen">
+        <div class="product-details">
+            <h3>Lenovo X1 Yoga 3rd Gen</h3>
+            <p class="product-price">From S$600</p>
+            <p class="stock-info">Lightly Used</p>
+            <p class="condition-info">Lightly Used</p>
+        </div>
+    </div>
+
+    <div class="product-card" data-condition="well-used">
+        <img src="laptop3.jpg" alt="Touchscreen i7 Lenovo ThinkPad Yoga 260">
+        <div class="product-details">
+            <h3>Touchscreen i7 Lenovo ThinkPad Yoga 260</h3>
+            <p class="product-price">From S$200</p>
+            <p class="stock-info">Well Used</p>
+            <p class="condition-info">Well Used</p>
+        </div>
+    </div>
+</div>
