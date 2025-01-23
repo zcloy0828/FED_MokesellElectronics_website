@@ -1,4 +1,13 @@
 /* Header and General Styles: Use Same as Homepage */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #f9f9f9;
+}
+
 header {
     background-color: #d6e0f0;
     color: #333;
@@ -9,7 +18,7 @@ header {
 }
 
 header .logo {
-    font-size: 1.5em;
+    font-size: 2em;
     font-weight: bold;
 }
 
