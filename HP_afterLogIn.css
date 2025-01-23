@@ -139,3 +139,47 @@ footer {
     bottom: 0;
     width: 100%;
 }
+
+/*hover-effect over bell icon   -   dont know if it is working yet*/
+
+/* Notification Box */
+.notification-box {
+    display: none; /* Hidden by default */
+    position: absolute;
+    top: 50px; /* Position below the icon */
+    right: 0;
+    width: 300px;
+    background-color: white;
+    border: 1px solid #ccc;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    padding: 10px;
+    border-radius: 5px;
+    z-index: 1000;
+}
+
+/* Notification List */
+.notification-box p {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.notification-box ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.notification-box ul li {
+    padding: 5px 0;
+    border-bottom: 1px solid #eee;
+}
+
+.notification-box ul li:last-child {
+    border-bottom: none;
+}
+
+/* Show Box on Hover */
+.icon-button:hover + .notification-box,
+.notification-box:hover {
+    display: block;
+}
