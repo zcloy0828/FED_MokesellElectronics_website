@@ -91,8 +91,6 @@ header nav a:hover {
     background-color: #999;
 }
 
-
-
 header {
     background-color: #d6e0f0;
     color: #333;
@@ -183,6 +181,7 @@ header nav a:hover {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     overflow: hidden;
     margin: 40px auto;
+    padding: 10px; /* Added padding to the container */
 }
 
 .logo-section {
@@ -209,10 +208,10 @@ header nav a:hover {
     background-color: #e94e30;
     color: #ffffff;
     text-align: center;
-    padding: 10px;
+    padding: 65px;
+    margin-right: 10px; /* Updated to add more space */
     border-radius: 25px;
     width: 70px;
-
 }
 
 .sale-section h2 {
@@ -289,13 +288,15 @@ header nav a:hover {
     background-color: #4aa37b;
     transform: scale(1.05);
 }
+
 footer {
     text-align: center;
     background-color: #4d4d4d;
     color: #fff;
     padding: 3px 0;
     font-size: 14px;
-  }
+}
+
 /*hover-effect over bell icon   -   dont know if it is working yet*/
 
 /* Notification Box */
