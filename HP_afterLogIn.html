@@ -26,9 +26,19 @@
             <button class="icon-button" aria-label="Cart">
                 <img src="Shopping Cart.png" alt="Cart Icon">
             </button>
-            <button class="icon-button" aria-label="Notifications">
-                <img src="notifications.png" alt="Notification Icon">
-            </button>
+            <div class="notification-container">
+                <button class="icon-button" aria-label="Notifications" id="notification-icon">
+                    <img src="notifications.png" alt="Notification Icon">
+                </button>
+                <div class="notification-box" id="notification-box">
+                    <h3>Notifications</h3>
+                    <ul>
+                        <li>Order #123 has been shipped</li>
+                        <li>New item added to your wishlist</li>
+                        <li>Price drop on an item you liked</li>
+                    </ul>
+                </div>
+            </div>
             <button class="icon-button" aria-label="Chat">
                 <img src="Message circle.png" alt="Chat Icon">
             </button>
@@ -49,22 +59,6 @@
             </div>
         </div>
     </section>
-
-    <div class="user-options">
-        <span>Welcome, User</span>
-        <button class="icon-button" aria-label="Notifications" id="notification-icon">
-            <img src="notification-icon.png" alt="Notification Icon">
-        </button>
-        <div class="notification-box" id="notification-box">
-            <p>You have 3 new notifications</p>
-            <ul>
-                <li>Order #123 has been shipped</li>
-                <li>New item added to your wishlist</li>
-                <li>Price drop on an item you liked</li>
-            </ul>
-        </div>
-    </div>
-    
 
     <footer>
         <p>&copy; 2025 MokeSell. All rights reserved.</p>
