@@ -9,20 +9,21 @@ body {
 header {
     background-color: #d6e0f0;
     color: #333;
-    padding: 10px 20px;
+    padding: 20px 30px;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
 header .logo {
-    font-size: 1.5em;
+    font-size: 2em;
     font-weight: bold;
 }
 
 header nav {
     display: flex;
-    gap: 15px;
+    gap: 45px;
+    font-size: 1.2em;
 }
 
 header nav a {
@@ -54,8 +55,8 @@ header nav a:hover {
 }
 
 .icon-button img {
-    width: 24px;
-    height: 24px;
+    width: 27px;
+    height: 27px;
 }
 
 .search-bar {
@@ -63,14 +64,18 @@ header nav a:hover {
     justify-content: center;
     align-items: center;
     margin: 20px 0;
+    
 }
 
 .search-bar input {
     width: 70%;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 20px;
+    padding: 13px;
+    border: 1px solid #898888;
+    border-radius: 16px;
     outline: none;
+    background-color: rgba(226, 226, 226, 0.7);
+    backdrop-filter: blur(10px);
+  
 }
 
 .search-bar .clear-btn {
