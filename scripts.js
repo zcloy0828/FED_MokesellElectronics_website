@@ -58,7 +58,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
 document.addEventListener('DOMContentLoaded'), function() {
   const apiKey = '6793a0be1128e052496abe5f';
-  const apiUrl = 'https://devassignmentven-57f7.restdb.io/rest/account';}
+  const apiUrl = 'https://restdb.io/account/databases/mokesell-d4c3/api';}
 
   // Handle login form submission
 document.getElementById('login-form').addEventListener('submit'), function(event){
