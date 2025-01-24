@@ -15,66 +15,90 @@
             <a href="#">Accessories</a>
         </nav>
         <div class="auth-buttons">
-            <button onclick="location.href='#signup'">Sign Up</button>
-            <button onclick="location.href='#login'">Log In</button>
+            <button id="openSignUpModal">Sign Up</button>
+            <button id="openLoginModal">Log In</button>
         </div>
     </header>
 
     <div class="search-bar">
-      <input type="text" placeholder="Search">
-      <button class="clear-btn">X</button>
-  </div>
+        <input type="text" placeholder="Search">
+        <button class="clear-btn">X</button>
+    </div>
 
-  <div class="container">
-      <!-- Logo Section -->
-      <div class="logo-section">
-          <img src="mokesell-logo.png" alt="MokeSell Logo">
-          
-      </div>
+    <div class="container">
+        <div class="logo-section">
+            <img src="mokesell-logo.png" alt="MokeSell Logo">
+        </div>
+        <div class="sale-section">
+            <h2>50% OFF</h2>
+            <p>SALE</p>
+            <button>Shop Now</button>
+        </div>
+    </div>
 
-      <!-- Sale Section -->
-      <div class="sale-section">
-          <h2>50% OFF</h2>
-          <p>SALE</p>
-          <button>Shop Now</button>
-      </div>
-  </div>
-  <div class="grid-container">
-      <!-- Example Item 1 -->
-      <div class="grid-item">
-          <img src="phone1.png" alt="Product 1">
-          <button>Find out more</button>
-      </div>
-      <!-- Example Item 2 -->
-      <div class="grid-item">
-          <img src="phone2.png" alt="Product 2">
-          <button>Find out more</button>
-      </div>
-      <!-- Example Item 3 -->
-      <div class="grid-item">
-          <img src="phone3.png" alt="Product 3">
-          <button>Find out more</button>
-      </div>
-      <!-- Example Item 4 -->
-      <div class="grid-item">
-          <img src="laptops.png" alt="Laptops">
-          <button>Find out more</button>
-      </div>
-      <!-- Example Item 5 -->
-      <div class="grid-item">
-          <img src="charge.png" alt="Chargers">
-          <button>Find out more</button>
-      </div>
-      <!-- Example Item 6 -->
-      <div class="grid-item">
-          <img src="earbuds.png" alt="Earbuds">
-          <button>Find out more</button>
-      </div>
-  </div>
-  <footer>
-      <p>&copy; 2025 MokeSell. All rights reserved.</p>
-  </footer>
+    <div class="grid-container">
+        <div class="grid-item">
+            <img src="phone1.png" alt="Product 1">
+            <button>Find out more</button>
+        </div>
+        <div class="grid-item">
+            <img src="phone2.png" alt="Product 2">
+            <button>Find out more</button>
+        </div>
+        <div class="grid-item">
+            <img src="phone3.png" alt="Product 3">
+            <button>Find out more</button>
+        </div>
+        <div class="grid-item">
+            <img src="laptops.png" alt="Laptops">
+            <button>Find out more</button>
+        </div>
+        <div class="grid-item">
+            <img src="charge.png" alt="Chargers">
+            <button>Find out more</button>
+        </div>
+        <div class="grid-item">
+            <img src="earbuds.png" alt="Earbuds">
+            <button>Find out more</button>
+        </div>
+    </div>
 
-  <script src="scripts.js"></script>
+    <!-- Login Modal -->
+    <div class="modal-overlay" id="loginModal">
+        <div class="modal-content">
+            <span class="modal-close" id="closeLoginModal">&times;</span>
+            <h2>Log In</h2>
+            <input type="text" placeholder="Username or email">
+            <div class="password-wrapper">
+                <input type="password" placeholder="Password" id="passwordInput">
+                <span class="toggle-password" id="togglePassword">&#128065;</span>
+            </div>
+            <a href="#">Forgot password?</a>
+            <button>Log In</button>
+            <a href="#" id="switchToSignUp">Don't have an account yet? Create account</a>
+        </div>
+    </div>
+
+    <!-- Sign-Up Modal -->
+    <div class="modal-overlay" id="signUpModal">
+        <div class="modal-content">
+            <span class="modal-close" id="closeSignUpModal">&times;</span>
+            <h2>Sign Up</h2>
+            <form id="signUpForm">
+                <input type="text" id="name" placeholder="Full Name" required>
+                <input type="email" id="email" placeholder="Email" required>
+                <input type="password" id="password" placeholder="Password" required>
+                <input type="password" id="confirmPassword" placeholder="Confirm Password" required>
+                <button type="submit">Sign Up</button>
+            </form>
+            <a href="#" id="switchToLogin">Already have an account? Log In</a>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 MokeSell. All rights reserved.</p>
+    </footer>
+
+    <script src="scripts.js"></script>
 </body>
 </html>
