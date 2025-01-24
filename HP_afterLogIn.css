@@ -174,8 +174,8 @@ header nav a:hover {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 700px;
-    height: 300px;
+    width: 1400px;
+    height: 500px;
     border-radius: 20px;
     background: #cacaca;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -195,8 +195,8 @@ header nav a:hover {
 
 .logo-section img {
     width: 80%;
-    height: 220px;
-    width: 220px;
+    height: 400px;
+    width: 400px;
 }
 
 .sale-section {
@@ -205,10 +205,10 @@ header nav a:hover {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: #e94e30;
+    background-color: #c7472d;
     color: #ffffff;
     text-align: center;
-    padding: 65px;
+    padding: 160px;
     margin-right: 10px; /* Updated to add more space */
     border-radius: 25px;
     width: 70px;
